@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multi-Page Website</title>
-  <link rel="stylesheet" href="style.css">
-<style type="text/css" id="dcoder_stylesheet">/* CSS Styles */
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Multi-Page Website</title> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">/* CSS Styles */
 body {
   background-color: black;
   color: white;
@@ -136,61 +136,50 @@ body {
   margin-top: 20px;
   text-align: center;
   color: #ff7200;
-}</style></head>
-<body>
-
-  <!-- Welcome Page -->
-  <div id="welcomePage" class="page">
-    <div class="navbar">
-      <h2 class="logo">Kiran Naidu</h2>
-      <div class="menu">
-        <ul>
-          <li><a href="#" onclick="showPage('loginPage')">Login</a></li>
-          <li><a href="#" onclick="showPage('signupPage')">Sign Up</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="content">
-      <h1>Welcome to Our Website</h1>
-      <p>Please login or sign up to continue.</p>
-    </div>
-  </div>
-
-  <!-- Login Page -->
-  <div id="loginPage" class="page">
-    <div class="content">
-      <div class="form">
-        <h2>Login Here</h2>
-        <input type="email" id="email" placeholder="Enter Email Here">
-        <input type="password" id="password" placeholder="Enter Password Here">
-        <button class="btnn" id="loginBtn">Login</button>
-        <p class="link">Don't have an account?<br><a href="#" onclick="showPage('signupPage')">Sign up</a> here</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sign-Up Page -->
-  <div id="signupPage" class="page">
-    <div class="content">
-      <div class="form">
-        <h2>Sign Up Here</h2>
-        <input type="email" id="signupEmail" placeholder="Enter Email Here">
-        <input type="password" id="signupPassword" placeholder="Enter Password Here">
-        <button class="btnn" id="signupBtn">Sign Up</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Dashboard Page -->
-  <div id="dashboardPage" class="page">
-    <div class="content">
-      <h1>Welcome to Your Dashboard!</h1>
-      <p>You have successfully logged in.</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-
+}</style></head> 
+ <body> <!-- Welcome Page --> 
+  <div id="welcomePage" class="page"> 
+   <div class="navbar"> 
+    <h2 class="logo">Kiran Naidu</h2> 
+    <div class="menu"> 
+     <ul> 
+      <li><a href="#" onclick="showPage('loginPage')">Login</a></li> 
+      <li><a href="#" onclick="showPage('signupPage')">Sign Up</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="content"> 
+    <h1>Welcome to Our Website</h1> 
+    <p>Please login or sign up to continue.</p> 
+   </div> 
+  </div> <!-- Login Page --> 
+  <div id="loginPage" class="page"> 
+   <div class="content"> 
+    <div class="form"> 
+     <h2>Login Here</h2> 
+     <input type="email" id="email" placeholder="Enter Email Here"> 
+     <input type="password" id="password" placeholder="Enter Password Here"> <button class="btnn" id="loginBtn">Login</button> 
+     <p class="link">Don't have an account?<br><a href="#" onclick="showPage('signupPage')">Sign up</a> here</p> 
+    </div> 
+   </div> 
+  </div> <!-- Sign-Up Page --> 
+  <div id="signupPage" class="page"> 
+   <div class="content"> 
+    <div class="form"> 
+     <h2>Sign Up Here</h2> 
+     <input type="email" id="signupEmail" placeholder="Enter Email Here"> 
+     <input type="password" id="signupPassword" placeholder="Enter Password Here"> <button class="btnn" id="signupBtn">Sign Up</button> 
+    </div> 
+   </div> 
+  </div> <!-- Dashboard Page --> 
+  <div id="dashboardPage" class="page"> 
+   <div class="content"> 
+    <h1>Welcome to Your Dashboard!</h1> 
+    <p>You have successfully logged in.</p> 
+   </div> 
+  </div> 
+  <script src="script.js"></script> 
+ 
 <script type="text/javascript" id="dcoder_script">// JavaScript Code
 
 // Show the first page (welcome page) when the website loads
@@ -240,5 +229,7 @@ window.addEventListener('load', function() {
   if (window.location.pathname.includes('dashboard') && localStorage.getItem("authenticated") !== "true") {
     alert("You must be logged in to view this page.");
     showPage('loginPage'); // Redirect to the login page if not authenticated
+  }
+});</script></body></html>uthenticated
   }
 });</script></body></html>
